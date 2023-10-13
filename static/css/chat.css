@@ -1,0 +1,274 @@
+
+#userInput {
+    width: 75%;
+}
+
+.input-box {
+    float: left;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    color: #000;
+    background-color: white;
+    outline: none
+}
+
+
+.chat-bar-collapsible {
+   
+   
+    bottom: 0;
+    right: 50px;
+    /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); */
+}
+
+.message-box{
+
+    line-height: 1.5em;
+    display: inline-block;
+    background: #5ca6fa;
+    padding: 10px;
+    border-radius: 8px;
+    border-bottom-right-radius: 2px;
+    max-width: 80%;
+    margin-right: 10px;
+    animation: floatup .5s forwards
+
+}
+
+   .collapsible {
+    background-color: rgb(58, 138, 250);
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    z-index: 3;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    position:fixed;
+    padding-left: 20px;
+    margin-left: 1px;
+    font-size: 18px;
+ 
+    top: 0;
+} 
+
+.content {
+    width: 100%;
+    /* max-height: 500px; */
+  
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    /* background-color: #f1f1f1; */
+}
+
+.full-chat-block {
+    /* width: 350px; */
+    width: 100%;
+  
+
+    background: white;
+    text-align: center;
+    overflow: auto;
+    scrollbar-width: none;
+    height: max-content;
+    transition: max-height 0.2s ease-out;
+}
+
+.outer-container {
+    /* min-height: 500px; */
+
+ width: 100%;
+
+margin-top: 50px;
+display: flex;
+    justify-content: center;
+}
+
+.chat-container {
+    z-index: 1;
+    height: 85vh;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    scroll-behavior: smooth;
+    hyphens: auto;
+    
+
+  
+}
+
+.chat-container::-webkit-scrollbar {
+    display:flex;
+    height: 100vh;
+    background-color: #000;
+}
+
+.chat-bar-input-block {
+    /* margin-left: 10px;
+    margin-right: 10px; */
+    display: flex;
+    float: left;
+    position:fixed;
+    bottom: 0;
+    box-sizing: border-box;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+   
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px 0px 10px 10px;
+}
+
+.chat-bar-icons {
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    width: 25%;
+    float: right;
+    font-size: 20px;
+}
+
+/* #chat-bar-icons:hover {
+    opacity: .7;
+} */
+
+#camera-feed {
+    width: 100%;
+    height: 400px;
+    /* max-width: 640px; */
+  }
+  
+  /* CSS styles for captured photo */
+  #captured-photo {
+    display: none; /* Hide the captured photo by default */
+    max-width: 100%;
+  }
+
+/* Chat bubbles */
+
+#userInput {
+    width: 75%;
+}
+
+.input-box {
+    float: left;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    color: #000;
+    background-color: white;
+    outline: none
+}
+
+.userText {
+    color: white;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: right;
+    clear: both;
+}
+
+.userText span {
+    line-height: 1.5em;
+    display: inline-block;
+    background: #5ca6fa;
+    padding: 10px;
+    border-radius: 8px;
+    border-bottom-right-radius: 2px;
+    max-width: 80%;
+    margin-right: 10px;
+    animation: floatup .5s forwards
+}
+
+.botText {
+    color: #000;
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+}
+
+.botText span {
+    line-height: 1.5em;
+    display: inline-block;
+    background: #989b97;
+    padding: 10px;
+    border-radius: 8px;
+    border-bottom-left-radius: 2px;
+    margin-left: 10px;
+    animation: floatup .5s forwards
+}
+
+@keyframes floatup {
+    from {
+        transform: translateY(14px);
+        opacity: .0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .full-chat-block {
+        width: 100%;
+        /* border-radius: 0px; */
+    }
+    .chat-bar-collapsible {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+    }
+    .collapsible {
+        width: 100%;
+    
+    }
+}
+
+
+center{
+    margin-top: 50px;
+}
+
+
+.capture-image{
+
+position: relative;
+top: 0;
+
+}
+
+button{
+    cursor: pointer;
+}
+
+
+i:hover{
+    cursor: pointer;
+    opacity: .7;
+}
+
+
+#textInput{
+    line-height: 1.5em;
+    display: inline-block;
+    background: #e0e0e0;
+    padding: 10px;
+    border-radius: 8px;
+    border-bottom-left-radius: 2px;
+    margin-right: 10px;
+    animation: floatup .5s forwards
+}
